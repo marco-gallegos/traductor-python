@@ -39,7 +39,7 @@ patterns = {
     ":=": ASIGNACION,
     "\n": SEPARADOR,
     "[_a-zA-Z]+[_a-zA-Z0-9]*(?=[^_0-9a-zA-Z])": IDENTIFICADOR,
-    "([0-9]+(\.[0-9]+)?)(?=[^0-9.])": CONSTANTE_NUMERICA,
+    "([0-9]+(\.[0-9]+)?)(?=[^0-9])": CONSTANTE_NUMERICA,
     "(\.[0-9]+)(?=[^0-9.])": CONSTANTE_NUMERICA,
     '".*"': CONSTANTE_CADENA,
     "\+": OP_SUMA,
@@ -53,7 +53,7 @@ patterns = {
     ">=?(?=.)": OP_COMPARACION,
     "!=(?=.)": OP_COMPARACION,
     "==(?=.)": OP_COMPARACION,
-    "\$$": FINAL
+    "\$$": FINAL,
 }
 
 defined_keywords = {
@@ -74,33 +74,43 @@ defined_keywords = {
 }
 
 def analizador_lexico(sourceCode):
+    sourceCode = sourceCode + "$"
     tokens_resultantes = []
     errores = []
     longitud = len(sourceCode)
     ultimo_indice = 0
-    linea_actual = 0
+    linea_actual = 1
     numero_tokens_anteriores = 0
     while(ultimo_indice < longitud):
         numero_tokens_anteriores = len(tokens_resultantes)
+        if (sourceCode[ultimo_indice] == ' '):
+            ultimo_indice = ultimo_indice + 1
+            continue
         for key in patterns.keys():
             match = re.match(key, sourceCode[ultimo_indice:])
             if match:
                 (init, end) = match.span()
-                ultimo_indice = end
+                ultimo_indice = ultimo_indice + end
+                if (patterns[key] == SEPARADOR):
+                    linea_actual = linea_actual + 1
+                token = patterns[key]
+                lexema = match.group(0)
+                if lexema in defined_keywords:
+                    token = defined_keywords[lexema]
                 tokens_resultantes.append({
-                    "token": patterns[key],
-                    "lexema": match.group(0),
+                    "token": token,
+                    "lexema": lexema,
                     "linea": linea_actual
                 })
                 continue
-        if numero_tokens_anteriores == tokens_resultantes:
-            errores.append({
-                "linea": linea_actual,
-                "error": "Caracter " + sourceCode[ultimo_indice] + " no coincide con ningun patron"
-            })
+        if numero_tokens_anteriores == len(tokens_resultantes):
+            errores.append("Caracter " + sourceCode[ultimo_indice] + " no coincide con ningun patron, linea " + str(linea_actual))
+            ultimo_indice = ultimo_indice + 1
     return (tokens_resultantes, errores)
 
 
     print(CONDICIONAL)
 
-print(analizador_lexico('hola mundo'))
+
+file = open('tests/test4.txt')
+print(analizador_lexico(''.join(file.readlines())))
