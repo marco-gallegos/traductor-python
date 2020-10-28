@@ -1,0 +1,6 @@
+int main() {
+    para x hasta 200 {
+        imprimir x
+    }
+    return 0
+}
