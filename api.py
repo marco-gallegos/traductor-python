@@ -7,11 +7,13 @@
 """
 from flask import Flask
 from flask_restful import Api
+from flask_cors import CORS, cross_origin
 
 #controladores no olvides agregar la clase en el init de el paquete
 import controllers
 
 app = Flask(__name__)
+cors = CORS(app)
 api = Api(app)
 
 # rutas resource de flask restful

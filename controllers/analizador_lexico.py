@@ -1,5 +1,5 @@
 import re
-from tokens import (CONDICIONAL,
+from .tokens import (CONDICIONAL,
 MIENTRAS,
 PARA,
 IMPORTACION,
@@ -32,28 +32,28 @@ FINAL)
 patterns = {
     "{": LLAVE_ABIERTA,
     "}": LLAVE_CERRADA,
-    "\(": PARENTESIS_ABIERTO,
-    "\)": PARENTESIS_CERRADO,
-    "\[": CORCHETE_ABIERTO,
-    "\]": CORCHETE_CERRADO,
+    "\\(": PARENTESIS_ABIERTO,
+    "\\)": PARENTESIS_CERRADO,
+    "\\[": CORCHETE_ABIERTO,
+    "\\]": CORCHETE_CERRADO,
     ":=": ASIGNACION,
     "\n": SEPARADOR,
     "[_a-zA-Z]+[_a-zA-Z0-9]*(?=[^_0-9a-zA-Z])": IDENTIFICADOR,
-    "([0-9]+(\.[0-9]+)?)(?=[^0-9])": CONSTANTE_NUMERICA,
-    "(\.[0-9]+)(?=[^0-9.])": CONSTANTE_NUMERICA,
+    "([0-9]+(\\.[0-9]+)?)(?=[^0-9_a-zA-Z])": CONSTANTE_NUMERICA,
+    "(\\.[0-9]+)(?=[^0-9._a-zA-Z])": CONSTANTE_NUMERICA,
     '".*"': CONSTANTE_CADENA,
-    "\+": OP_SUMA,
+    "\\+": OP_SUMA,
     "-": OP_RESTA,
-    "/": OP_DIVISION,
-    "\*": OP_MULTIPLICACION,
+    "\\/": OP_DIVISION,
+    "\\*": OP_MULTIPLICACION,
     "&&": OP_LOGICO,
-    "\|\|": OP_LOGICO,
+    "\\|\\|": OP_LOGICO,
     ",": COMA,
     "<=?(?=.)": OP_COMPARACION,
     ">=?(?=.)": OP_COMPARACION,
     "!=(?=.)": OP_COMPARACION,
     "==(?=.)": OP_COMPARACION,
-    "\$$": FINAL,
+    "\\$$": FINAL,
 }
 
 defined_keywords = {
@@ -104,13 +104,16 @@ def analizador_lexico(sourceCode):
                 })
                 continue
         if numero_tokens_anteriores == len(tokens_resultantes):
-            errores.append("Caracter " + sourceCode[ultimo_indice] + " no coincide con ningun patron, linea " + str(linea_actual))
+            errores.append({
+              "linea": linea_actual,
+              "posicion": ultimo_indice,
+              "mensaje": "Caracter " + sourceCode[ultimo_indice] + " no coincide con ningun patron, linea " + str(linea_actual)
+            })
             ultimo_indice = ultimo_indice + 1
-    return (tokens_resultantes, errores)
-
-
-    print(CONDICIONAL)
-
+    return {
+      "tokens": tokens_resultantes,
+      "errores": errores
+    }
 
 file = open('tests/test4.txt')
 print(analizador_lexico(''.join(file.readlines())))

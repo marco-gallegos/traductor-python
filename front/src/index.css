@@ -1,0 +1,13 @@
+.line-error {
+  background-color: coral;
+}
+
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  padding: 10px;
+  border: solid #eee 1px;
+}
