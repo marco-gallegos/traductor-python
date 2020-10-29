@@ -1,5 +1,5 @@
 import re
-from .tokens import (CONDICIONAL,
+from tokens import (CONDICIONAL,
 MIENTRAS,
 PARA,
 IMPORTACION,
@@ -73,7 +73,16 @@ defined_keywords = {
     "hasta": HASTA,
 }
 
-def analizador_lexico(sourceCode):
+
+def analizador_lexico(sourceCode:str)-> dict:
+    """analizador_lexico
+
+    Args:
+        sourceCode (str): [description]
+
+    Returns:
+        dict: [description]
+    """
     sourceCode = sourceCode + "$"
     tokens_resultantes = []
     errores = []
@@ -105,14 +114,14 @@ def analizador_lexico(sourceCode):
                 continue
         if numero_tokens_anteriores == len(tokens_resultantes):
             errores.append({
-              "linea": linea_actual,
-              "posicion": ultimo_indice,
-              "mensaje": "Caracter " + sourceCode[ultimo_indice] + " no coincide con ningun patron, linea " + str(linea_actual)
+                "linea": linea_actual,
+                "posicion": ultimo_indice,
+                "mensaje": "Caracter " + sourceCode[ultimo_indice] + " no coincide con ningun patron, linea " + str(linea_actual)
             })
             ultimo_indice = ultimo_indice + 1
     return {
-      "tokens": tokens_resultantes,
-      "errores": errores
+        "tokens": tokens_resultantes,
+        "errores": errores
     }
 
 file = open('tests/test4.txt')

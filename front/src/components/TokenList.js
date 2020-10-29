@@ -3,7 +3,7 @@ import React from 'react';
 export default function TokenList(props) {
   const tokenList = props.tokens || [];
   return (
-    <table>
+    <table className="table table-sm table-striped" >
       <thead>
         <tr>
           <th>Token</th>
