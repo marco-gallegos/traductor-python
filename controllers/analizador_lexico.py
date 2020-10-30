@@ -1,5 +1,15 @@
+"""Analizador lexico
+
+@Author
+@Date
+@Description
+
+"""
+from flask_restful import Resource, reqparse
 import re
-from tokens import (CONDICIONAL,
+
+from controllers.tokens import (
+CONDICIONAL,
 MIENTRAS,
 PARA,
 IMPORTACION,
@@ -27,7 +37,8 @@ COMA,
 CONSTANTE,
 OP_COMPARACION,
 RETORNA,
-FINAL)
+FINAL 
+)
 
 patterns = {
     "{": LLAVE_ABIERTA,
@@ -72,6 +83,8 @@ defined_keywords = {
     "retorna": RETORNA,
     "hasta": HASTA,
 }
+
+parser = reqparse.RequestParser()
 
 
 def analizador_lexico(sourceCode:str)-> dict:
@@ -124,5 +137,13 @@ def analizador_lexico(sourceCode:str)-> dict:
         "errores": errores
     }
 
-file = open('tests/test4.txt')
-print(analizador_lexico(''.join(file.readlines())))
+
+class AnalizadorLexico(Resource):
+    def post(self):
+        parser.add_argument('sourceCode')
+        args = parser.parse_args()
+        return analizador_lexico(args['sourceCode'])
+
+if __name__ == '__main__':
+    file = open('tests/test4.txt')
+    print(analizador_lexico(''.join(file.readlines())))

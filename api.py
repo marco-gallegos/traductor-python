@@ -19,6 +19,8 @@ api = Api(app)
 # rutas resource de flask restful
 api.add_resource(controllers.HelloWorld, '/')
 
+api.add_resource(controllers.AnalizadorLexico, '/lexico')
+
 #se pueden agregar rutas nativas de flask que escupan json
 
 if __name__ == '__main__':
