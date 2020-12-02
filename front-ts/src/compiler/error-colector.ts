@@ -5,7 +5,7 @@ class ErrorColector {
     this.errors = [];
   }
   push(error: string) {
-    this.errors.push(error);  
+    this.errors.push(error);
   }
 }
 

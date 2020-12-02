@@ -53,14 +53,17 @@ const IF_INT_STATE = 2;
 const CONST_STATE = 3;
 
 export interface LexicalResult {
-  tokens: Token[],
-  errors: string[]
+  tokens: Token[];
+  errors: string[];
+  errors_lines: number[];
 }
 
 export function AnalyzeLexical(input: string): LexicalResult {
   input = input + '$';
   const tokens: Token[]  = [];
   const errors: string[] = [];
+  const errors_lines: number[] = [];
+  let linea = 1;
   const chars = [...input];
   let state = INITIAL_STATE;
   let length = chars.length;
@@ -89,6 +92,7 @@ export function AnalyzeLexical(input: string): LexicalResult {
             continue;
           }
           if (firstEvalResult.stateOnNoMatch == -1) {
+            errors_lines.push(linea);
             errors.push('caracter inesperado en ' + i + " '" + char +"'");
             i++;
             continue;
@@ -124,9 +128,13 @@ export function AnalyzeLexical(input: string): LexicalResult {
           tokenSoFar = char;
           continue;
         } else if (isBlank(char)) {
+          if (char == "\n") {
+            linea ++;
+          }
           i++;
           continue;
         } else {
+          errors_lines.push(linea);
           errors.push('caracter inesperado en ' + i + " '" + char +"'");
           i++;
           continue;
@@ -147,6 +155,7 @@ export function AnalyzeLexical(input: string): LexicalResult {
     } else if (state == CONST_STATE) {
       if (!isDigit(char)) {
         if (isIdentifierChar(char)) {
+          errors_lines.push(linea);
           errors.push('Identificador no puede empezar con numero. Indice: ' + i + " '" + char +"' " + tokenSoFar);
           tokenSoFar = '';
           state = INITIAL_STATE;
@@ -168,7 +177,7 @@ export function AnalyzeLexical(input: string): LexicalResult {
     }
   }
   console.log(tokens);
-  return {tokens, errors};
+  return {tokens, errors, errors_lines};
 }
 
 function isAlpha(char: string): boolean {
@@ -190,6 +199,7 @@ function notIdentifierCharacter(char: string) {
 }
 
 function isBlank(char: string) {
+  
   return char === ' ' || char == '\n' || char == '\t';
 }
 

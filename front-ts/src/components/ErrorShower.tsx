@@ -5,8 +5,13 @@ function preprocessSourceCode(sourceCodeStr: string) {
   return sourceCodeStr.split('');
 }
 
+export interface Errors {
+  linea: number;
+  mensaje: string;
+}
+
 interface ErrorShowerProps {
-  errors: any[];
+  errors: Errors[];
   sourceCode: string;
 }
 

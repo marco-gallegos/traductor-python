@@ -22,10 +22,12 @@ export function JsonViewer(props: JsonViewerProps) {
   }
 
    
-  return (<div>
-    <div ref={ref}></div>
-    <button onClick={() => updateTree()}>UpdateTree</button>
-  </div>)
+  return (
+    <div>
+      <div ref={ref}></div>
+      <button onClick={() => updateTree()}>UpdateTree</button>
+    </div>
+  );
 }
 
 

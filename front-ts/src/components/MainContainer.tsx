@@ -5,6 +5,7 @@ import { semanticAnalysis } from '../compiler/semantic';
 import { sintacticAnalysis } from '../compiler/sintactical';
 import { Token } from '../models/token';
 import { getFromTableAt } from '../resources/GR2slrTablebien';
+import ErrorShower, { Errors } from './ErrorShower';
 import Grid from './Grid';
 import { JsonViewer } from './JsonViewer';
 
@@ -13,7 +14,8 @@ interface MainComponentState {
   input: string;
   jsonTree: string;
   parsed: string[];
-  tokens: Token[]
+  tokens: Token[];
+  errors: Errors[]
 } 
 
 export default class MainComponent extends React.Component<any, MainComponentState> {
@@ -25,13 +27,15 @@ export default class MainComponent extends React.Component<any, MainComponentSta
       input: '',
       jsonTree: '',
       parsed: [],
-      tokens: []
+      tokens: [],
+      errors: []
     };
   }
 
   private process() {
     errors.clear();
     const result = AnalyzeLexical(this.state.input);
+    let lexicalErrors = result.errors.map((value, index) => ({linea: result.errors_lines[index], mensaje: value}));    
     const sintacticResult = sintacticAnalysis(result.tokens);
     console.log(sintacticResult);
     let copy = '';
@@ -42,7 +46,6 @@ export default class MainComponent extends React.Component<any, MainComponentSta
     }
     if (sintacticResult) {
       semanticAnalysis(sintacticResult);
-
       console.log(errors);
       if (errors.errors.length > 0) {
         copy = copy + '\nSemantica incorrecta:\n\n-' + errors.errors.join('\n-');
@@ -54,7 +57,8 @@ export default class MainComponent extends React.Component<any, MainComponentSta
       parsed: this.state.input.trim().split(' ').flatMap(e => e.split('\n').flatMap(se => se.split('\t'))).filter(e => !!e),
       copy: copy,
       tokens: result.tokens,
-      jsonTree: JSON.stringify(sintacticResult)
+      jsonTree: JSON.stringify(sintacticResult),
+      errors: lexicalErrors
     });
   }
 
@@ -83,6 +87,7 @@ export default class MainComponent extends React.Component<any, MainComponentSta
         <div style={{clear: 'both'}}>
           <Grid tokens={this.state.tokens}/>
         </div>
+        <ErrorShower errors={this.state.errors} sourceCode={this.state.input}/>
         {this.state.jsonTree ? <JsonViewer jsonString={this.state.jsonTree} /> : null}
       </div>
     )
