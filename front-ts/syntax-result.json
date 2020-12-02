@@ -1,0 +1,1430 @@
+{
+  "numberOfRule": 2,
+  "definicion": {
+    "numberOfRule": 4,
+    "defFunc": {
+      "numberOfRule": 8,
+      "tipo": {
+        "lexeme": "void",
+        "name": "tipo_de_dato",
+        "tokenId": 0
+      },
+      "id": {
+        "lexeme": "main",
+        "name": "id",
+        "tokenId": 1
+      },
+      "parametros": 9,
+      "bloque": {
+        "numberOfRule": 13,
+        "defLocales": {
+          "numberOfRule": 15,
+          "defLocal": {
+            "numberOfRule": 16,
+            "defVar": {
+              "numberOfRule": 5,
+              "type": {
+                "lexeme": "int",
+                "name": "tipo_de_dato",
+                "tokenId": 0
+              },
+              "id": {
+                "lexeme": "x",
+                "name": "id",
+                "tokenId": 1
+              },
+              "listaVar": 6
+            }
+          },
+          "siguiente": {
+            "numberOfRule": 15,
+            "defLocal": {
+              "numberOfRule": 16,
+              "defVar": {
+                "numberOfRule": 5,
+                "type": {
+                  "lexeme": "float",
+                  "name": "tipo_de_dato",
+                  "tokenId": 0
+                },
+                "id": {
+                  "lexeme": "y",
+                  "name": "id",
+                  "tokenId": 1
+                },
+                "listaVar": 6
+              }
+            },
+            "siguiente": {
+              "numberOfRule": 15,
+              "defLocal": {
+                "numberOfRule": 16,
+                "defVar": {
+                  "numberOfRule": 5,
+                  "type": {
+                    "lexeme": "int",
+                    "name": "tipo_de_dato",
+                    "tokenId": 0
+                  },
+                  "id": {
+                    "lexeme": "z",
+                    "name": "id",
+                    "tokenId": 1
+                  },
+                  "listaVar": 6
+                }
+              },
+              "siguiente": {
+                "numberOfRule": 15,
+                "defLocal": {
+                  "numberOfRule": 16,
+                  "defVar": {
+                    "numberOfRule": 5,
+                    "type": {
+                      "lexeme": "char",
+                      "name": "tipo_de_dato",
+                      "tokenId": 0
+                    },
+                    "id": {
+                      "lexeme": "q",
+                      "name": "id",
+                      "tokenId": 1
+                    },
+                    "listaVar": 6
+                  }
+                },
+                "siguiente": {
+                  "numberOfRule": 15,
+                  "defLocal": {
+                    "numberOfRule": 17,
+                    "sentencia": {
+                      "numberOfRule": 20,
+                      "id": {
+                        "lexeme": "x",
+                        "name": "id",
+                        "tokenId": 1
+                      },
+                      "expresion": {
+                        "numberOfRule": 34,
+                        "constante": {
+                          "lexeme": "0",
+                          "name": "constante",
+                          "tokenId": 13
+                        }
+                      }
+                    }
+                  },
+                  "siguiente": {
+                    "numberOfRule": 15,
+                    "defLocal": {
+                      "numberOfRule": 17,
+                      "sentencia": {
+                        "numberOfRule": 20,
+                        "id": {
+                          "lexeme": "y",
+                          "name": "id",
+                          "tokenId": 1
+                        },
+                        "expresion": {
+                          "numberOfRule": 34,
+                          "constante": {
+                            "lexeme": "1",
+                            "name": "constante",
+                            "tokenId": 13
+                          }
+                        }
+                      }
+                    },
+                    "siguiente": {
+                      "numberOfRule": 15,
+                      "defLocal": {
+                        "numberOfRule": 17,
+                        "sentencia": {
+                          "numberOfRule": 20,
+                          "id": {
+                            "lexeme": "z",
+                            "name": "id",
+                            "tokenId": 1
+                          },
+                          "expresion": {
+                            "numberOfRule": 34,
+                            "constante": {
+                              "lexeme": "3",
+                              "name": "constante",
+                              "tokenId": 13
+                            }
+                          }
+                        }
+                      },
+                      "siguiente": {
+                        "numberOfRule": 15,
+                        "defLocal": {
+                          "numberOfRule": 17,
+                          "sentencia": {
+                            "numberOfRule": 20,
+                            "id": {
+                              "lexeme": "q",
+                              "name": "id",
+                              "tokenId": 1
+                            },
+                            "expresion": {
+                              "numberOfRule": 34,
+                              "constante": {
+                                "lexeme": "3",
+                                "name": "constante",
+                                "tokenId": 13
+                              }
+                            }
+                          }
+                        },
+                        "siguiente": {
+                          "numberOfRule": 15,
+                          "defLocal": {
+                            "numberOfRule": 17,
+                            "sentencia": {
+                              "numberOfRule": 21,
+                              "condition": {
+                                "numberOfRule": 42,
+                                "expresionLeft": {
+                                  "numberOfRule": 40,
+                                  "expresionLeft": {
+                                    "numberOfRule": 42,
+                                    "expresionLeft": {
+                                      "numberOfRule": 40,
+                                      "expresionLeft": {
+                                        "numberOfRule": 42,
+                                        "expresionLeft": {
+                                          "numberOfRule": 40,
+                                          "expresionLeft": {
+                                            "numberOfRule": 42,
+                                            "expresionLeft": {
+                                              "numberOfRule": 40,
+                                              "expresionLeft": {
+                                                "numberOfRule": 42,
+                                                "expresionLeft": {
+                                                  "numberOfRule": 40,
+                                                  "expresionLeft": {
+                                                    "numberOfRule": 42,
+                                                    "expresionLeft": {
+                                                      "numberOfRule": 33,
+                                                      "id": {
+                                                        "lexeme": "x",
+                                                        "name": "id",
+                                                        "tokenId": 1
+                                                      }
+                                                    },
+                                                    "operador": {
+                                                      "lexeme": "<",
+                                                      "name": "OpRelacional",
+                                                      "tokenId": 17
+                                                    },
+                                                    "expresionRigth": {
+                                                      "numberOfRule": 34,
+                                                      "constante": {
+                                                        "lexeme": "3",
+                                                        "name": "constante",
+                                                        "tokenId": 13
+                                                      }
+                                                    }
+                                                  },
+                                                  "operador": {
+                                                    "lexeme": "&&",
+                                                    "name": "opLogico",
+                                                    "tokenId": 15
+                                                  },
+                                                  "expresionRigth": {
+                                                    "numberOfRule": 33,
+                                                    "id": {
+                                                      "lexeme": "x",
+                                                      "name": "id",
+                                                      "tokenId": 1
+                                                    }
+                                                  }
+                                                },
+                                                "operador": {
+                                                  "lexeme": ">",
+                                                  "name": "OpRelacional",
+                                                  "tokenId": 17
+                                                },
+                                                "expresionRigth": {
+                                                  "numberOfRule": 34,
+                                                  "constante": {
+                                                    "lexeme": "4",
+                                                    "name": "constante",
+                                                    "tokenId": 13
+                                                  }
+                                                }
+                                              },
+                                              "operador": {
+                                                "lexeme": "&&",
+                                                "name": "opLogico",
+                                                "tokenId": 15
+                                              },
+                                              "expresionRigth": {
+                                                "numberOfRule": 33,
+                                                "id": {
+                                                  "lexeme": "x",
+                                                  "name": "id",
+                                                  "tokenId": 1
+                                                }
+                                              }
+                                            },
+                                            "operador": {
+                                              "lexeme": "<=",
+                                              "name": "OpRelacional",
+                                              "tokenId": 17
+                                            },
+                                            "expresionRigth": {
+                                              "numberOfRule": 34,
+                                              "constante": {
+                                                "lexeme": "4",
+                                                "name": "constante",
+                                                "tokenId": 13
+                                              }
+                                            }
+                                          },
+                                          "operador": {
+                                            "lexeme": "||",
+                                            "name": "opLogico",
+                                            "tokenId": 15
+                                          },
+                                          "expresionRigth": {
+                                            "numberOfRule": 33,
+                                            "id": {
+                                              "lexeme": "x",
+                                              "name": "id",
+                                              "tokenId": 1
+                                            }
+                                          }
+                                        },
+                                        "operador": {
+                                          "lexeme": ">=",
+                                          "name": "OpRelacional",
+                                          "tokenId": 17
+                                        },
+                                        "expresionRigth": {
+                                          "numberOfRule": 34,
+                                          "constante": {
+                                            "lexeme": "5",
+                                            "name": "constante",
+                                            "tokenId": 13
+                                          }
+                                        }
+                                      },
+                                      "operador": {
+                                        "lexeme": "||",
+                                        "name": "opLogico",
+                                        "tokenId": 15
+                                      },
+                                      "expresionRigth": {
+                                        "numberOfRule": 33,
+                                        "id": {
+                                          "lexeme": "x",
+                                          "name": "id",
+                                          "tokenId": 1
+                                        }
+                                      }
+                                    },
+                                    "operador": {
+                                      "lexeme": "==",
+                                      "name": "OpRelacional",
+                                      "tokenId": 17
+                                    },
+                                    "expresionRigth": {
+                                      "numberOfRule": 34,
+                                      "constante": {
+                                        "lexeme": "4",
+                                        "name": "constante",
+                                        "tokenId": 13
+                                      }
+                                    }
+                                  },
+                                  "operador": {
+                                    "lexeme": "&&",
+                                    "name": "opLogico",
+                                    "tokenId": 15
+                                  },
+                                  "expresionRigth": {
+                                    "numberOfRule": 33,
+                                    "id": {
+                                      "lexeme": "x",
+                                      "name": "id",
+                                      "tokenId": 1
+                                    }
+                                  }
+                                },
+                                "operador": {
+                                  "lexeme": "!=",
+                                  "name": "OpRelacional",
+                                  "tokenId": 17
+                                },
+                                "expresionRigth": {
+                                  "numberOfRule": 34,
+                                  "constante": {
+                                    "lexeme": "45",
+                                    "name": "constante",
+                                    "tokenId": 13
+                                  }
+                                }
+                              },
+                              "sentencia": {
+                                "numberOfRule": 37,
+                                "bloque": {
+                                  "numberOfRule": 27,
+                                  "sentencias": {
+                                    "numberOfRule": 19,
+                                    "sentencia": {
+                                      "numberOfRule": 24,
+                                      "llamada": {
+                                        "numberOfRule": 35,
+                                        "id": {
+                                          "lexeme": "doSomething",
+                                          "name": "id",
+                                          "tokenId": 1
+                                        },
+                                        "argumentos": {
+                                          "numberOfRule": 29,
+                                          "sentencias": {
+                                            "numberOfRule": 31,
+                                            "expresion": {
+                                              "numberOfRule": 33,
+                                              "id": {
+                                                "lexeme": "y",
+                                                "name": "id",
+                                                "tokenId": 1
+                                              }
+                                            },
+                                            "siguiente": {
+                                              "numberOfRule": 31,
+                                              "expresion": {
+                                                "numberOfRule": 33,
+                                                "id": {
+                                                  "lexeme": "z",
+                                                  "name": "id",
+                                                  "tokenId": 1
+                                                }
+                                              },
+                                              "siguiente": 30
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "siguiente": {
+                                      "numberOfRule": 19,
+                                      "sentencia": {
+                                        "numberOfRule": 22,
+                                        "condition": {
+                                          "numberOfRule": 33,
+                                          "id": {
+                                            "lexeme": "true",
+                                            "name": "id",
+                                            "tokenId": 1
+                                          }
+                                        },
+                                        "bloque": {
+                                          "numberOfRule": 27,
+                                          "sentencias": {
+                                            "numberOfRule": 19,
+                                            "sentencia": {
+                                              "numberOfRule": 24,
+                                              "llamada": {
+                                                "numberOfRule": 35,
+                                                "id": {
+                                                  "lexeme": "print",
+                                                  "name": "id",
+                                                  "tokenId": 1
+                                                },
+                                                "argumentos": {
+                                                  "numberOfRule": 29,
+                                                  "sentencias": 30
+                                                }
+                                              }
+                                            },
+                                            "siguiente": 18
+                                          }
+                                        }
+                                      },
+                                      "siguiente": 18
+                                    }
+                                  }
+                                }
+                              },
+                              "else": {
+                                "numberOfRule": 26,
+                                "sentenciaBloque": {
+                                  "numberOfRule": 37,
+                                  "bloque": {
+                                    "numberOfRule": 27,
+                                    "sentencias": {
+                                      "numberOfRule": 19,
+                                      "sentencia": {
+                                        "numberOfRule": 20,
+                                        "id": {
+                                          "lexeme": "y",
+                                          "name": "id",
+                                          "tokenId": 1
+                                        },
+                                        "expresion": {
+                                          "numberOfRule": 39,
+                                          "expresionLeft": {
+                                            "numberOfRule": 33,
+                                            "id": {
+                                              "lexeme": "x",
+                                              "name": "id",
+                                              "tokenId": 1
+                                            }
+                                          },
+                                          "operador": {
+                                            "lexeme": "+",
+                                            "name": "opSuma",
+                                            "tokenId": 14
+                                          },
+                                          "expresionRigth": {
+                                            "numberOfRule": 34,
+                                            "constante": {
+                                              "lexeme": "1",
+                                              "name": "constante",
+                                              "tokenId": 13
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "siguiente": {
+                                        "numberOfRule": 19,
+                                        "sentencia": {
+                                          "numberOfRule": 20,
+                                          "id": {
+                                            "lexeme": "x",
+                                            "name": "id",
+                                            "tokenId": 1
+                                          },
+                                          "expresion": {
+                                            "numberOfRule": 39,
+                                            "expresionLeft": {
+                                              "numberOfRule": 41,
+                                              "expresionLeft": {
+                                                "numberOfRule": 41,
+                                                "expresionLeft": {
+                                                  "numberOfRule": 39,
+                                                  "expresionLeft": {
+                                                    "numberOfRule": 33,
+                                                    "id": {
+                                                      "lexeme": "x",
+                                                      "name": "id",
+                                                      "tokenId": 1
+                                                    }
+                                                  },
+                                                  "operador": {
+                                                    "lexeme": "+",
+                                                    "name": "opSuma",
+                                                    "tokenId": 14
+                                                  },
+                                                  "expresionRigth": {
+                                                    "numberOfRule": 34,
+                                                    "constante": {
+                                                      "lexeme": "2",
+                                                      "name": "constante",
+                                                      "tokenId": 13
+                                                    }
+                                                  }
+                                                },
+                                                "operador": {
+                                                  "lexeme": "*",
+                                                  "name": "opMultiplicacion",
+                                                  "tokenId": 16
+                                                },
+                                                "expresionRigth": {
+                                                  "numberOfRule": 34,
+                                                  "constante": {
+                                                    "lexeme": "4",
+                                                    "name": "constante",
+                                                    "tokenId": 13
+                                                  }
+                                                }
+                                              },
+                                              "operador": {
+                                                "lexeme": "/",
+                                                "name": "opMultiplicacion",
+                                                "tokenId": 16
+                                              },
+                                              "expresionRigth": {
+                                                "numberOfRule": 34,
+                                                "constante": {
+                                                  "lexeme": "43",
+                                                  "name": "constante",
+                                                  "tokenId": 13
+                                                }
+                                              }
+                                            },
+                                            "operador": {
+                                              "lexeme": "-",
+                                              "name": "opSuma",
+                                              "tokenId": 14
+                                            },
+                                            "expresionRigth": {
+                                              "numberOfRule": 34,
+                                              "constante": {
+                                                "lexeme": "5",
+                                                "name": "constante",
+                                                "tokenId": 13
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "siguiente": 18
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "siguiente": {
+                            "numberOfRule": 15,
+                            "defLocal": {
+                              "numberOfRule": 17,
+                              "sentencia": {
+                                "numberOfRule": 23,
+                                "expresion": {
+                                  "numberOfRule": 34,
+                                  "constante": {
+                                    "lexeme": "0",
+                                    "name": "constante",
+                                    "tokenId": 13
+                                  }
+                                }
+                              }
+                            },
+                            "siguiente": 14
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "siguiente": {
+    "numberOfRule": 2,
+    "definicion": {
+      "numberOfRule": 4,
+      "defFunc": {
+        "numberOfRule": 8,
+        "tipo": {
+          "lexeme": "int",
+          "name": "tipo_de_dato",
+          "tokenId": 0
+        },
+        "id": {
+          "lexeme": "main",
+          "name": "id",
+          "tokenId": 1
+        },
+        "parametros": {
+          "numberOfRule": 10,
+          "tipo": {
+            "lexeme": "x",
+            "name": "id",
+            "tokenId": 1
+          },
+          "identifier": {
+            "numberOfRule": 12,
+            "tipo": {
+              "lexeme": "int",
+              "name": "tipo_de_dato",
+              "tokenId": 0
+            },
+            "identifier": {
+              "lexeme": "y",
+              "name": "id",
+              "tokenId": 1
+            },
+            "next": {
+              "numberOfRule": 12,
+              "tipo": {
+                "lexeme": "int",
+                "name": "tipo_de_dato",
+                "tokenId": 0
+              },
+              "identifier": {
+                "lexeme": "z",
+                "name": "id",
+                "tokenId": 1
+              },
+              "next": 11
+            }
+          }
+        },
+        "bloque": {
+          "numberOfRule": 13,
+          "defLocales": {
+            "numberOfRule": 15,
+            "defLocal": {
+              "numberOfRule": 17,
+              "sentencia": {
+                "numberOfRule": 20,
+                "id": {
+                  "lexeme": "a",
+                  "name": "id",
+                  "tokenId": 1
+                },
+                "expresion": {
+                  "numberOfRule": 34,
+                  "constante": {
+                    "lexeme": "1",
+                    "name": "constante",
+                    "tokenId": 13
+                  }
+                }
+              }
+            },
+            "siguiente": {
+              "numberOfRule": 15,
+              "defLocal": {
+                "numberOfRule": 17,
+                "sentencia": {
+                  "numberOfRule": 20,
+                  "id": {
+                    "lexeme": "a",
+                    "name": "id",
+                    "tokenId": 1
+                  },
+                  "expresion": {
+                    "numberOfRule": 34,
+                    "constante": {
+                      "lexeme": "2",
+                      "name": "constante",
+                      "tokenId": 13
+                    }
+                  }
+                }
+              },
+              "siguiente": 14
+            }
+          }
+        }
+      }
+    },
+    "siguiente": {
+      "numberOfRule": 2,
+      "definicion": {
+        "numberOfRule": 4,
+        "defFunc": {
+          "numberOfRule": 8,
+          "tipo": {
+            "lexeme": "void",
+            "name": "tipo_de_dato",
+            "tokenId": 0
+          },
+          "id": {
+            "lexeme": "main",
+            "name": "id",
+            "tokenId": 1
+          },
+          "parametros": 9,
+          "bloque": {
+            "numberOfRule": 13,
+            "defLocales": {
+              "numberOfRule": 15,
+              "defLocal": {
+                "numberOfRule": 16,
+                "defVar": {
+                  "numberOfRule": 5,
+                  "type": {
+                    "lexeme": "int",
+                    "name": "tipo_de_dato",
+                    "tokenId": 0
+                  },
+                  "id": {
+                    "lexeme": "x",
+                    "name": "id",
+                    "tokenId": 1
+                  },
+                  "listaVar": 6
+                }
+              },
+              "siguiente": {
+                "numberOfRule": 15,
+                "defLocal": {
+                  "numberOfRule": 16,
+                  "defVar": {
+                    "numberOfRule": 5,
+                    "type": {
+                      "lexeme": "float",
+                      "name": "tipo_de_dato",
+                      "tokenId": 0
+                    },
+                    "id": {
+                      "lexeme": "y",
+                      "name": "id",
+                      "tokenId": 1
+                    },
+                    "listaVar": 6
+                  }
+                },
+                "siguiente": {
+                  "numberOfRule": 15,
+                  "defLocal": {
+                    "numberOfRule": 16,
+                    "defVar": {
+                      "numberOfRule": 5,
+                      "type": {
+                        "lexeme": "int",
+                        "name": "tipo_de_dato",
+                        "tokenId": 0
+                      },
+                      "id": {
+                        "lexeme": "z",
+                        "name": "id",
+                        "tokenId": 1
+                      },
+                      "listaVar": 6
+                    }
+                  },
+                  "siguiente": {
+                    "numberOfRule": 15,
+                    "defLocal": {
+                      "numberOfRule": 16,
+                      "defVar": {
+                        "numberOfRule": 5,
+                        "type": {
+                          "lexeme": "char",
+                          "name": "tipo_de_dato",
+                          "tokenId": 0
+                        },
+                        "id": {
+                          "lexeme": "q",
+                          "name": "id",
+                          "tokenId": 1
+                        },
+                        "listaVar": 6
+                      }
+                    },
+                    "siguiente": {
+                      "numberOfRule": 15,
+                      "defLocal": {
+                        "numberOfRule": 17,
+                        "sentencia": {
+                          "numberOfRule": 20,
+                          "id": {
+                            "lexeme": "x",
+                            "name": "id",
+                            "tokenId": 1
+                          },
+                          "expresion": {
+                            "numberOfRule": 34,
+                            "constante": {
+                              "lexeme": "0",
+                              "name": "constante",
+                              "tokenId": 13
+                            }
+                          }
+                        }
+                      },
+                      "siguiente": {
+                        "numberOfRule": 15,
+                        "defLocal": {
+                          "numberOfRule": 17,
+                          "sentencia": {
+                            "numberOfRule": 20,
+                            "id": {
+                              "lexeme": "y",
+                              "name": "id",
+                              "tokenId": 1
+                            },
+                            "expresion": {
+                              "numberOfRule": 34,
+                              "constante": {
+                                "lexeme": "1",
+                                "name": "constante",
+                                "tokenId": 13
+                              }
+                            }
+                          }
+                        },
+                        "siguiente": {
+                          "numberOfRule": 15,
+                          "defLocal": {
+                            "numberOfRule": 17,
+                            "sentencia": {
+                              "numberOfRule": 20,
+                              "id": {
+                                "lexeme": "z",
+                                "name": "id",
+                                "tokenId": 1
+                              },
+                              "expresion": {
+                                "numberOfRule": 34,
+                                "constante": {
+                                  "lexeme": "3",
+                                  "name": "constante",
+                                  "tokenId": 13
+                                }
+                              }
+                            }
+                          },
+                          "siguiente": {
+                            "numberOfRule": 15,
+                            "defLocal": {
+                              "numberOfRule": 17,
+                              "sentencia": {
+                                "numberOfRule": 20,
+                                "id": {
+                                  "lexeme": "q",
+                                  "name": "id",
+                                  "tokenId": 1
+                                },
+                                "expresion": {
+                                  "numberOfRule": 34,
+                                  "constante": {
+                                    "lexeme": "3",
+                                    "name": "constante",
+                                    "tokenId": 13
+                                  }
+                                }
+                              }
+                            },
+                            "siguiente": {
+                              "numberOfRule": 15,
+                              "defLocal": {
+                                "numberOfRule": 17,
+                                "sentencia": {
+                                  "numberOfRule": 21,
+                                  "condition": {
+                                    "numberOfRule": 42,
+                                    "expresionLeft": {
+                                      "numberOfRule": 40,
+                                      "expresionLeft": {
+                                        "numberOfRule": 42,
+                                        "expresionLeft": {
+                                          "numberOfRule": 40,
+                                          "expresionLeft": {
+                                            "numberOfRule": 42,
+                                            "expresionLeft": {
+                                              "numberOfRule": 40,
+                                              "expresionLeft": {
+                                                "numberOfRule": 42,
+                                                "expresionLeft": {
+                                                  "numberOfRule": 40,
+                                                  "expresionLeft": {
+                                                    "numberOfRule": 42,
+                                                    "expresionLeft": {
+                                                      "numberOfRule": 40,
+                                                      "expresionLeft": {
+                                                        "numberOfRule": 42,
+                                                        "expresionLeft": {
+                                                          "numberOfRule": 33,
+                                                          "id": {
+                                                            "lexeme": "x",
+                                                            "name": "id",
+                                                            "tokenId": 1
+                                                          }
+                                                        },
+                                                        "operador": {
+                                                          "lexeme": "<",
+                                                          "name": "OpRelacional",
+                                                          "tokenId": 17
+                                                        },
+                                                        "expresionRigth": {
+                                                          "numberOfRule": 34,
+                                                          "constante": {
+                                                            "lexeme": "3",
+                                                            "name": "constante",
+                                                            "tokenId": 13
+                                                          }
+                                                        }
+                                                      },
+                                                      "operador": {
+                                                        "lexeme": "&&",
+                                                        "name": "opLogico",
+                                                        "tokenId": 15
+                                                      },
+                                                      "expresionRigth": {
+                                                        "numberOfRule": 33,
+                                                        "id": {
+                                                          "lexeme": "x",
+                                                          "name": "id",
+                                                          "tokenId": 1
+                                                        }
+                                                      }
+                                                    },
+                                                    "operador": {
+                                                      "lexeme": ">",
+                                                      "name": "OpRelacional",
+                                                      "tokenId": 17
+                                                    },
+                                                    "expresionRigth": {
+                                                      "numberOfRule": 34,
+                                                      "constante": {
+                                                        "lexeme": "4",
+                                                        "name": "constante",
+                                                        "tokenId": 13
+                                                      }
+                                                    }
+                                                  },
+                                                  "operador": {
+                                                    "lexeme": "&&",
+                                                    "name": "opLogico",
+                                                    "tokenId": 15
+                                                  },
+                                                  "expresionRigth": {
+                                                    "numberOfRule": 33,
+                                                    "id": {
+                                                      "lexeme": "x",
+                                                      "name": "id",
+                                                      "tokenId": 1
+                                                    }
+                                                  }
+                                                },
+                                                "operador": {
+                                                  "lexeme": "<=",
+                                                  "name": "OpRelacional",
+                                                  "tokenId": 17
+                                                },
+                                                "expresionRigth": {
+                                                  "numberOfRule": 34,
+                                                  "constante": {
+                                                    "lexeme": "4",
+                                                    "name": "constante",
+                                                    "tokenId": 13
+                                                  }
+                                                }
+                                              },
+                                              "operador": {
+                                                "lexeme": "||",
+                                                "name": "opLogico",
+                                                "tokenId": 15
+                                              },
+                                              "expresionRigth": {
+                                                "numberOfRule": 33,
+                                                "id": {
+                                                  "lexeme": "x",
+                                                  "name": "id",
+                                                  "tokenId": 1
+                                                }
+                                              }
+                                            },
+                                            "operador": {
+                                              "lexeme": ">=",
+                                              "name": "OpRelacional",
+                                              "tokenId": 17
+                                            },
+                                            "expresionRigth": {
+                                              "numberOfRule": 34,
+                                              "constante": {
+                                                "lexeme": "5",
+                                                "name": "constante",
+                                                "tokenId": 13
+                                              }
+                                            }
+                                          },
+                                          "operador": {
+                                            "lexeme": "||",
+                                            "name": "opLogico",
+                                            "tokenId": 15
+                                          },
+                                          "expresionRigth": {
+                                            "numberOfRule": 33,
+                                            "id": {
+                                              "lexeme": "x",
+                                              "name": "id",
+                                              "tokenId": 1
+                                            }
+                                          }
+                                        },
+                                        "operador": {
+                                          "lexeme": "==",
+                                          "name": "OpRelacional",
+                                          "tokenId": 17
+                                        },
+                                        "expresionRigth": {
+                                          "numberOfRule": 34,
+                                          "constante": {
+                                            "lexeme": "4",
+                                            "name": "constante",
+                                            "tokenId": 13
+                                          }
+                                        }
+                                      },
+                                      "operador": {
+                                        "lexeme": "&&",
+                                        "name": "opLogico",
+                                        "tokenId": 15
+                                      },
+                                      "expresionRigth": {
+                                        "numberOfRule": 33,
+                                        "id": {
+                                          "lexeme": "x",
+                                          "name": "id",
+                                          "tokenId": 1
+                                        }
+                                      }
+                                    },
+                                    "operador": {
+                                      "lexeme": "!=",
+                                      "name": "OpRelacional",
+                                      "tokenId": 17
+                                    },
+                                    "expresionRigth": {
+                                      "numberOfRule": 34,
+                                      "constante": {
+                                        "lexeme": "45",
+                                        "name": "constante",
+                                        "tokenId": 13
+                                      }
+                                    }
+                                  },
+                                  "sentencia": {
+                                    "numberOfRule": 37,
+                                    "bloque": {
+                                      "numberOfRule": 27,
+                                      "sentencias": {
+                                        "numberOfRule": 19,
+                                        "sentencia": {
+                                          "numberOfRule": 24,
+                                          "llamada": {
+                                            "numberOfRule": 35,
+                                            "id": {
+                                              "lexeme": "doSomething",
+                                              "name": "id",
+                                              "tokenId": 1
+                                            },
+                                            "argumentos": {
+                                              "numberOfRule": 29,
+                                              "sentencias": {
+                                                "numberOfRule": 31,
+                                                "expresion": {
+                                                  "numberOfRule": 33,
+                                                  "id": {
+                                                    "lexeme": "y",
+                                                    "name": "id",
+                                                    "tokenId": 1
+                                                  }
+                                                },
+                                                "siguiente": {
+                                                  "numberOfRule": 31,
+                                                  "expresion": {
+                                                    "numberOfRule": 33,
+                                                    "id": {
+                                                      "lexeme": "z",
+                                                      "name": "id",
+                                                      "tokenId": 1
+                                                    }
+                                                  },
+                                                  "siguiente": 30
+                                                }
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "siguiente": {
+                                          "numberOfRule": 19,
+                                          "sentencia": {
+                                            "numberOfRule": 22,
+                                            "condition": {
+                                              "numberOfRule": 33,
+                                              "id": {
+                                                "lexeme": "true",
+                                                "name": "id",
+                                                "tokenId": 1
+                                              }
+                                            },
+                                            "bloque": {
+                                              "numberOfRule": 27,
+                                              "sentencias": {
+                                                "numberOfRule": 19,
+                                                "sentencia": {
+                                                  "numberOfRule": 24,
+                                                  "llamada": {
+                                                    "numberOfRule": 35,
+                                                    "id": {
+                                                      "lexeme": "print",
+                                                      "name": "id",
+                                                      "tokenId": 1
+                                                    },
+                                                    "argumentos": {
+                                                      "numberOfRule": 29,
+                                                      "sentencias": 30
+                                                    }
+                                                  }
+                                                },
+                                                "siguiente": 18
+                                              }
+                                            }
+                                          },
+                                          "siguiente": 18
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "else": {
+                                    "numberOfRule": 26,
+                                    "sentenciaBloque": {
+                                      "numberOfRule": 37,
+                                      "bloque": {
+                                        "numberOfRule": 27,
+                                        "sentencias": {
+                                          "numberOfRule": 19,
+                                          "sentencia": {
+                                            "numberOfRule": 20,
+                                            "id": {
+                                              "lexeme": "y",
+                                              "name": "id",
+                                              "tokenId": 1
+                                            },
+                                            "expresion": {
+                                              "numberOfRule": 39,
+                                              "expresionLeft": {
+                                                "numberOfRule": 33,
+                                                "id": {
+                                                  "lexeme": "x",
+                                                  "name": "id",
+                                                  "tokenId": 1
+                                                }
+                                              },
+                                              "operador": {
+                                                "lexeme": "+",
+                                                "name": "opSuma",
+                                                "tokenId": 14
+                                              },
+                                              "expresionRigth": {
+                                                "numberOfRule": 34,
+                                                "constante": {
+                                                  "lexeme": "1",
+                                                  "name": "constante",
+                                                  "tokenId": 13
+                                                }
+                                              }
+                                            }
+                                          },
+                                          "siguiente": {
+                                            "numberOfRule": 19,
+                                            "sentencia": {
+                                              "numberOfRule": 20,
+                                              "id": {
+                                                "lexeme": "x",
+                                                "name": "id",
+                                                "tokenId": 1
+                                              },
+                                              "expresion": {
+                                                "numberOfRule": 39,
+                                                "expresionLeft": {
+                                                  "numberOfRule": 41,
+                                                  "expresionLeft": {
+                                                    "numberOfRule": 41,
+                                                    "expresionLeft": {
+                                                      "numberOfRule": 39,
+                                                      "expresionLeft": {
+                                                        "numberOfRule": 33,
+                                                        "id": {
+                                                          "lexeme": "x",
+                                                          "name": "id",
+                                                          "tokenId": 1
+                                                        }
+                                                      },
+                                                      "operador": {
+                                                        "lexeme": "+",
+                                                        "name": "opSuma",
+                                                        "tokenId": 14
+                                                      },
+                                                      "expresionRigth": {
+                                                        "numberOfRule": 34,
+                                                        "constante": {
+                                                          "lexeme": "2",
+                                                          "name": "constante",
+                                                          "tokenId": 13
+                                                        }
+                                                      }
+                                                    },
+                                                    "operador": {
+                                                      "lexeme": "*",
+                                                      "name": "opMultiplicacion",
+                                                      "tokenId": 16
+                                                    },
+                                                    "expresionRigth": {
+                                                      "numberOfRule": 34,
+                                                      "constante": {
+                                                        "lexeme": "4",
+                                                        "name": "constante",
+                                                        "tokenId": 13
+                                                      }
+                                                    }
+                                                  },
+                                                  "operador": {
+                                                    "lexeme": "/",
+                                                    "name": "opMultiplicacion",
+                                                    "tokenId": 16
+                                                  },
+                                                  "expresionRigth": {
+                                                    "numberOfRule": 34,
+                                                    "constante": {
+                                                      "lexeme": "43",
+                                                      "name": "constante",
+                                                      "tokenId": 13
+                                                    }
+                                                  }
+                                                },
+                                                "operador": {
+                                                  "lexeme": "-",
+                                                  "name": "opSuma",
+                                                  "tokenId": 14
+                                                },
+                                                "expresionRigth": {
+                                                  "numberOfRule": 34,
+                                                  "constante": {
+                                                    "lexeme": "5",
+                                                    "name": "constante",
+                                                    "tokenId": 13
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "siguiente": 18
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "siguiente": {
+                                "numberOfRule": 15,
+                                "defLocal": {
+                                  "numberOfRule": 17,
+                                  "sentencia": {
+                                    "numberOfRule": 23,
+                                    "expresion": {
+                                      "numberOfRule": 34,
+                                      "constante": {
+                                        "lexeme": "0",
+                                        "name": "constante",
+                                        "tokenId": 13
+                                      }
+                                    }
+                                  }
+                                },
+                                "siguiente": 14
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "siguiente": {
+        "numberOfRule": 2,
+        "definicion": {
+          "numberOfRule": 4,
+          "defFunc": {
+            "numberOfRule": 8,
+            "tipo": {
+              "lexeme": "int",
+              "name": "tipo_de_dato",
+              "tokenId": 0
+            },
+            "id": {
+              "lexeme": "main",
+              "name": "id",
+              "tokenId": 1
+            },
+            "parametros": {
+              "numberOfRule": 10,
+              "tipo": {
+                "lexeme": "x",
+                "name": "id",
+                "tokenId": 1
+              },
+              "identifier": {
+                "numberOfRule": 12,
+                "tipo": {
+                  "lexeme": "int",
+                  "name": "tipo_de_dato",
+                  "tokenId": 0
+                },
+                "identifier": {
+                  "lexeme": "y",
+                  "name": "id",
+                  "tokenId": 1
+                },
+                "next": {
+                  "numberOfRule": 12,
+                  "tipo": {
+                    "lexeme": "int",
+                    "name": "tipo_de_dato",
+                    "tokenId": 0
+                  },
+                  "identifier": {
+                    "lexeme": "z",
+                    "name": "id",
+                    "tokenId": 1
+                  },
+                  "next": 11
+                }
+              }
+            },
+            "bloque": {
+              "numberOfRule": 13,
+              "defLocales": {
+                "numberOfRule": 15,
+                "defLocal": {
+                  "numberOfRule": 17,
+                  "sentencia": {
+                    "numberOfRule": 20,
+                    "id": {
+                      "lexeme": "a",
+                      "name": "id",
+                      "tokenId": 1
+                    },
+                    "expresion": {
+                      "numberOfRule": 34,
+                      "constante": {
+                        "lexeme": "1",
+                        "name": "constante",
+                        "tokenId": 13
+                      }
+                    }
+                  }
+                },
+                "siguiente": {
+                  "numberOfRule": 15,
+                  "defLocal": {
+                    "numberOfRule": 17,
+                    "sentencia": {
+                      "numberOfRule": 20,
+                      "id": {
+                        "lexeme": "a",
+                        "name": "id",
+                        "tokenId": 1
+                      },
+                      "expresion": {
+                        "numberOfRule": 34,
+                        "constante": {
+                          "lexeme": "2",
+                          "name": "constante",
+                          "tokenId": 13
+                        }
+                      }
+                    }
+                  },
+                  "siguiente": 14
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
