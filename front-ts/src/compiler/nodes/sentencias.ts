@@ -24,7 +24,7 @@ export class Sentencias extends Node {
       } catch(ex) {
         errors.push(ex.message);
       }
-      node = this.siguiente;
+      node = node.siguiente;
     }
     return isValid;
   }

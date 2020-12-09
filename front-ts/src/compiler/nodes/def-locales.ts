@@ -17,7 +17,7 @@ export class DefLocales extends Node {
   validaSemantica(parentScope: SymbolTable) {
     let isValid = true;
     let nodo: DefLocales | undefined = this;
-    while(typeof(nodo) !== "number" && nodo != undefined) {
+    while(typeof(nodo.defLocal) !== "number" && nodo.defLocal != undefined) {
       try {
         let result = nodo.defLocal.validaSemantica(parentScope);
         isValid = isValid && result;

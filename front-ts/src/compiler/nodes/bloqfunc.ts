@@ -12,6 +12,9 @@ export class BloqFunc extends Node {
     this.defLocales = reducedata[DEF_LOCALES];
   }
   validaSemantica(parentScope: SymbolTable) {
-    return this.defLocales.validaSemantica(parentScope);
+    if (typeof (this.defLocales ) != "undefined" && this.defLocales) {
+      return this.defLocales.validaSemantica(parentScope);
+    }
+    return true;
   }
 }
